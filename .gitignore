@@ -1,0 +1,7 @@
+build/
+dist/
+.DS_Store
+.staticrypt.json
+*.html
+!src/*.enc
+hktcg-source/
