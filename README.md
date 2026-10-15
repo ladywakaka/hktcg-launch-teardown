@@ -9,7 +9,7 @@ Live pages (same team password):
 
 ## The comparison page
 
-Compares the Grade10 shop launch plan (Notion G10 Shop Launch Tracker, as of 15 Oct 2026) with HKTCG's launch: status tiles, a days-to-opening chart of both launches, a 12-area side-by-side table (Gap / Partly covered / Covered) and 12 timed suggestions. Below that it repeats the full HKTCG review. It is a snapshot: re-run the comparison when the Notion tracker changes. Stored encrypted as `src/compare.html.enc`.
+Compares the Grade10 shop launch plan (Notion G10 Shop Launch Tracker and the G10 Shop Marketing Update, as of 15 Oct 2026 afternoon) with HKTCG's launch: status tiles, a days-to-opening chart of both launches, a 12-area side-by-side table (Gap / Partly covered / Covered) and 12 timed suggestions. Below that it repeats the full HKTCG review. It is a snapshot: re-run the comparison when the Notion tracker changes. Stored encrypted as `src/compare.html.enc`.
 
 ## What's on the HKTCG page
 
