@@ -2,9 +2,16 @@
 
 A password-protected, bilingual (中文 / English) dashboard reviewing how HKTCG (iSQUARE, Tsim Sha Tsui) launched on social media and in the press, 20 May – 20 July 2026. Prepared as competitor research for the Grade10 Pak Sha Road opening.
 
-Live page: https://ladywakaka.github.io/hktcg-launch-teardown/
+Live pages (same team password):
 
-## What's on the page
+- HKTCG launch teardown: https://ladywakaka.github.io/hktcg-launch-teardown/
+- Grade10 vs HKTCG comparison: https://ladywakaka.github.io/hktcg-launch-teardown/compare/
+
+## The comparison page
+
+Compares the Grade10 shop launch plan (Notion G10 Shop Launch Tracker, as of 15 Oct 2026) with HKTCG's launch: status tiles, a days-to-opening chart of both launches, a 12-area side-by-side table (Gap / Partly covered / Covered) and 12 timed suggestions. Below that it repeats the full HKTCG review. It is a snapshot: re-run the comparison when the Notion tracker changes. Stored encrypted as `src/compare.html.enc`.
+
+## What's on the HKTCG page
 
 - Headline numbers (click a tile to jump to its section)
 - Nine takeaways and the three top posts
@@ -18,7 +25,7 @@ Live page: https://ladywakaka.github.io/hktcg-launch-teardown/
 
 This repository is public, so the page is never stored in readable form.
 
-1. `src/dashboard.html.enc` is the dashboard, encrypted with AES-256. The key is the `SOURCE_KEY` repository secret, and a copy is kept in the owner's macOS Keychain (item `hktcg-dashboard-source-key`).
+1. `src/dashboard.html.enc` and `src/compare.html.enc` are the two pages, encrypted with AES-256. The key is the `SOURCE_KEY` repository secret, and a copy is kept in the owner's macOS Keychain (item `hktcg-dashboard-source-key`).
 2. On every push to `main` (or **Run workflow** in the Actions tab), `.github/workflows/deploy.yml` decrypts the page, locks it with the team password using [StatiCrypt](https://github.com/robinmoisson/staticrypt), and publishes only the locked page to GitHub Pages.
 
 ## Secrets (Settings > Secrets and variables > Actions)
